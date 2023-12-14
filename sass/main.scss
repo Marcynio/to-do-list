@@ -70,7 +70,7 @@
       }
     }
 
-    &__list-container {
+    ul {
       li {
         list-style: none;
         font-size: 20px;
@@ -101,6 +101,24 @@
 
       .checked::before {
         background-image: url(../img/checked.png);
+      }
+
+      span {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 26px;
+        line-height: 40px;
+        text-align: center;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: lightgrey;
+          color: black;
+        }
       }
     }
   }
